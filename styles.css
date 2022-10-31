@@ -1,0 +1,65 @@
+body {
+  margin: 40px;
+}
+
+.sidebar {
+  /* TODO: Define the grid area here */
+  grid-row: 2 
+}
+
+.content {
+  /* TODO: Define the grid area here */
+  grid-column: 2 / 6;
+}
+
+.header {
+  /* TODO: Define the grid area here */
+  grid-column: 2 / 6;
+}
+
+.footer {
+  /* TODO: Define the grid area here */
+  grid-column: 1 / 6;
+}
+
+.wrapper {
+  display: grid;
+  grid-gap: 10px;
+  background-color: #fff;
+  color: #444;
+
+  /* TODO: Define the grid-template-columns and grid-template-areas values here. */
+  grid-auto-columns: auto;
+  grid-template-areas:
+    '....... header header'
+    'sidebar content content'
+    'footer  footer  footer';
+}
+
+.box {
+  background-color: papayawhip;
+  color: orangered;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 150%;
+}
+
+.header,
+.footer {
+  background-color: salmon;
+  color: papayawhip;
+}
+
+a:link {
+  color: salmon;
+}
+
+a:visited {
+  color: darksalmon;
+}
+
+a:hover {
+  color: orangered;
+}
+
+
